@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    long long n;
+    scanf("%lld",&n);
+    int poseven=1,posodd=1,odd=0,even=0;
+    while(n!=0)
+    {
+        int r=n%10;
+        if(r%2==0)
+        {
+            even=(r*poseven)+even;
+            poseven=poseven*10;
+        }
+        else
+        {
+            odd=(r*posodd)+odd;
+            posodd=posodd*10;
+        }
+        n=n/10;
+    }
+printf("%d\n",even);
+printf("%d\n",odd);
+  return 0;
+}
+
+Output:
+N=12345
+Odd: 135
+Even: 24
+
