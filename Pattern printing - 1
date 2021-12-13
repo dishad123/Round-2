@@ -6,8 +6,8 @@ Output:
     5     3
        4
     3     5
-  2         6 
-1            7
+  2          6 
+1              7
 #include <stdio.h>
 
 int main()
